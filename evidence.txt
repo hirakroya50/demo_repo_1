@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "src/main.py", line 42, in process_payment
+    if validate_transaction(user):
+  File "src/validator.py", line 3, in validate_transaction
+    return user_record.get("balance") > 0
+AttributeError: 'NoneType' object has no attribute 'get'
